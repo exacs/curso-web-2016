@@ -27,11 +27,11 @@ h2 {
 }
 
 blockquote {
+  position: relative; /* Necesario para que las comillas sean absolute*/
   padding: 0 10px 10px 10px;
   margin: 10px 0;
   border-top: 1px dotted #AAA;
   border-bottom: 1px dotted #AAA;
-  position: relative;
 }
 
 blockquote > p {}
@@ -98,11 +98,11 @@ body {
 }
 
 .new-task {
+  box-sizing: border-box;
   width: 100%;
   font-size: 1.5rem;
   outline: none;
   padding: 15px;
-  box-sizing: border-box;
   border: none;
   background: #F0F0F0;
   border-radius: 10px 10px 0 0;

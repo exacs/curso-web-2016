@@ -34,12 +34,33 @@ Este documento es solamente un guión de la clase con algunas notas y referencia
 ### HTML5
 * Guía explicando [secciones en HTML5]
 * Ejemplo de [página en la que la cabecera está en una posición inusual]
+* [Lista de etiquetas (en inglés)](http://www.w3schools.com/tags/default.asp)
+* [Lista de etiquetas (en español)](https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos)
+
+#### Etiquetas utilizadas
+* a
+* h1
+* h2
+* blockquote
+* p
+* ul
+* li
+* input
+* button
+* span
+
 
 ### CSS3
 * [Selectores CSS]
-* El [modelo de la caja] y la propiedad [box-sizing]
-* Propiedades de [texto CSS] y [tipografía CSS]
 * Discusión sobre cómo [organizar el fichero CSS]. [Otra](http://learn.shayhowe.com/advanced-html-css/performance-organization/).
+
+#### Propiedades utilizadas
+* [Tipografía CSS] font-family, font-weight, font-size
+* [Texto CSS] text-decoration, text-align, line-height
+* [Color en CSS](http://www.w3schools.com/cssref/pr_text_color.asp), [background](http://www.w3schools.com/css/css_background.asp)
+* El [modelo de la caja] padding, margin, border, [box-sizing]
+* [Posiciones CSS](http://www.w3schools.com/css/css_positioning.asp): position, width, height, top, left, bottom, right
+* [box-shadow](http://www.w3schools.com/css/css3_shadows.asp)
 
 ### JavaScript
 * ¿Qué es el [árbol DOM]? 
@@ -50,8 +71,9 @@ Este documento es solamente un guión de la clase con algunas notas y referencia
 [secciones en HTML5]: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document#The_HTML5_Outline_Algorithm
 [página en la que la cabecera está en una posición inusual]: http://wp.architecture.com.au/risk/
 
-[texto CSS]: http://www.w3schools.com/css/css_text.asp
-[tipografía CSS]: http://www.w3schools.com/css/css_font.asp
+[Tipografía CSS]: http://www.w3schools.com/css/css_font.asp
+[Texto CSS]: http://www.w3schools.com/css/css_text.asp
+
 [modelo de la caja]: http://www.w3schools.com/css/css_boxmodel.asp
 [box-sizing]: www.w3schools.com/css/css3_box-sizing.asp
 [Selectores CSS]: http://www.w3schools.com/cssref/css_selectors.asp
