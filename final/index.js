@@ -101,7 +101,7 @@ function init() {
    * "añadir nueva tarea"
    */
   document.getElementById('new-task').onkeyup = function(event) {
-    if (event.keyCode===13) {
+    if (event.key==="Enter") {
       newTask(event.target.value);
       event.target.value = '';
       render();

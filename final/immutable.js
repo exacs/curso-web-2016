@@ -17,8 +17,8 @@ function newTask(task) {
  *                       False en caso contrario
  */
 function setDone(task, done) {
-  tasks = tasks.map(function(t) {
-    return t.id===task ? {id:t.id, text:t.text, done:done, exist:t.exist} : t;
+  tasks = tasks.map(
+    t => t.id===task ? {id:t.id, text:t.text, done:done, exist:t.exist} : t;
   });
 }
 
@@ -27,8 +27,8 @@ function setDone(task, done) {
  * @param number  task - Identificador de la tarea
  */
 function deleteTask(task) {
-  tasks = tasks.map(function(t) {
-    return t.id===task ? {id:t.id, text:t.text, done:t.done, exist:false} : t;
+  tasks = tasks.map(
+    t =>t.id===task ? {id:t.id, text:t.text, done:t.done, exist:false} : t;
   });
 }
 
@@ -42,8 +42,8 @@ function render() {
   ulNode.innerHTML = '';
 
   // Insertamos todos los elementos
-  tasks.filter(function(item) {
-    return item.exist;
+  tasks.filter(
+    item => item.exist;
   }).forEach(function(item) {
     var liNode      = document.createElement('li');
     var checkboxNode= document.createElement('input');

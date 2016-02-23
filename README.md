@@ -65,8 +65,25 @@ Este documento es solamente un guión de la clase con algunas notas y referencia
 ### JavaScript
 * ¿Qué es el [árbol DOM]? 
 * [El objeto DOM] en JavaScript
-* [El objeto Event](http://www.w3schools.com/jsref/dom_obj_event.asp)
-* [El objeto Document](http://www.w3schools.com/jsref/dom_obj_document.asp)
+
+#### Funciones utilizadas
+* Arrays
+  * método [push](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/push)
+* [Objeto document](http://www.w3schools.com/jsref/dom_obj_document.asp)
+  - método [getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
+  - método [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+  - método [createElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+* Objetos element y node
+  - propiedad [appendChild](https://developer.mozilla.org/es/docs/Web/API/Node/appendChild)
+  - método [getAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute)
+  - método [setAttribute](https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute)
+  - propiedad [textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)
+  - propiedad [innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
+  - propiedad [checked](http://www.w3schools.com/jsref/prop_checkbox_checked.asp)
+* [Objeto event](http://www.w3schools.com/jsref/dom_obj_event.asp)
+  - Propiedad [key](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key)
+  - Propiedad [target](https://developer.mozilla.org/en-US/docs/Web/API/Event/target)
+  - Propiedad [currentTarget](https://developer.mozilla.org/en-US/docs/Web/API/Event/currentTarget)
 
 [secciones en HTML5]: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document#The_HTML5_Outline_Algorithm
 [página en la que la cabecera está en una posición inusual]: http://wp.architecture.com.au/risk/
