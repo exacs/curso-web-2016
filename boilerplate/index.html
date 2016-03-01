@@ -8,26 +8,50 @@
   <script src="index.js"></script>
 </head>
 <body>
-  Lista de tareas
-  
-  Instituciones
-    Universidad Politécnica de Madrid
-    E.T.S. Ingenieros Informáticos
-    ACM
-  
-  Try again, fail again, fail better
-  Samuel Beckett
+  <header class="header"><h1>Lista de tareas</h1></header>
+  <aside class="extras">
+    <h2>Instituciones</h2>
+    <ul>
+      <li><a href="http://www.upm.es">Universidad Politécnica de Madrid</a></li>
+      <li><a href="http://www.fi.upm.es">E.T.S. Ingenieros Informáticos</a></li>
+      <li><a href="http://acm.asoc.fi.upm.es/">ACM</a></li>
+    </ul>
 
-  [insertar nueva tarea]
+    <h2>Comunidades</h2>
+    <ul>
+      <li>MadridJS</li>
+      <li>HTML5-Spain</li>
+      <li>Madrid Functional Programming</li>
+    </ul>
 
-  [checkbox]
-  Tarea 1
-  [botón X]
+    <blockquote>
+      <p>Try again, fail again, fail better</p>
+      <footer>Samuel Beckett</footer>
+    </blockquote>
+  </aside>
 
-  [checkbox marcada]
-  Tarea 2
-  [botón X]
+  <main class="main">
+    <header>
+      <input type="text" name="new-task" id="new-task" class="new-task" placeholder="Insertar nueva tarea">
+    </header>
 
-  Made by ______
+    <section>
+      <ul id="task-list" class="task-list">
+        <li class="task task-active">
+          <input type="checkbox">
+          <span>Tarea 1</span>
+          <button class="destroy"></button>
+        </li>
+        <li class="task task-complete">
+          <input type="checkbox" checked>
+          <span>Tarea 2</span>
+          <button class="destroy"></button>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">Made by <a href="http://github.com/exacs">Carlos Saito</a> for <a href="http://github.com/acmfi">ACM-FI</a>. Source</footer>
+  <script>init();</script>
 </body>
 </html>

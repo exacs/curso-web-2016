@@ -1,9 +1,214 @@
+@import url(https://fonts.googleapis.com/css?family=Arbutus+Slab|Poppins:300,500,400);
+
 /* FORMAT */
+* {
+  font-size: 14px;
+  color: #000;
+}
+
+body {
+  font-family: 'Arbutus Slab';
+  background: #E0E0E0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Poppins;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+blockquote {
+  position: relative; /* Necesario para que las comillas sean absolute*/
+  padding: 0 10px 10px 10px;
+  margin: 10px 0;
+  border-top: 1px dotted #AAA;
+  border-bottom: 1px dotted #AAA;
+}
+
+blockquote > p {}
+blockquote > p::before {
+  content: '“';
+  position: absolute;
+  text-align: left;
+  font-size: 30px;
+  top: 0;
+  left: -3px;
+}
+blockquote > p::after {
+  content: '”';
+  position: absolute;
+  text-align: right;
+  font-size: 30px;
+  bottom: 15px;
+  right: 3px;
+}
+
+blockquote > footer {
+  text-align: right;
+}
+
 
 /* LAYOUT */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.extras {
+  position: absolute;
+  width: 290px;
+  left: -290px;
+  top: 0;
+}
+
+.header {}
+.main {}
+.footer {}
 
 /* COMPONENTS */
+.extras {
+  box-sizing: border-box;
+  padding: 20px;
+}
 
-/* HIGHER RESOLUTIONS  */
-@media all and (min-width: 0) {
+.extras > ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header {
+  text-align: center;
+  color: #666;
+}
+
+.main {
+  background: #FFF;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.new-task {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1.5rem;
+  outline: none;
+  padding: 15px;
+  border: none;
+  background: #F0F0F0;
+  border-radius: 10px 10px 0 0;
+}
+
+.new-task::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    #CCCCCC;
+}
+
+.new-task:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    #CCCCCC;
+  opacity:  1;
+}
+
+.new-task::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    #CCCCCC;
+  opacity:  1;
+}
+
+.new-task:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:    #CCCCCC;
+}
+
+.new-task:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color:    #CCCCCC;
+}
+
+.task-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.task {
+  padding: 10px 10px;
+  border-bottom: 1px solid #E3E3E3;
+  position: relative;
+}
+
+.task > input[type=checkbox] {
+  position: absolute;
+  left: 10px;
+  top: 2px;
+  height: 30px;
+}
+
+.task > span {
+  display: block;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.task > .destroy {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  border: none;
+  visibility: hidden;
+  background-color: transparent;
+}
+
+.task:hover > .destroy {
+  visibility: visible;
+}
+
+.task > .destroy:after {
+  content: 'x';
+}
+
+.task-complete > span {
+  text-decoration: line-through;
+}
+
+.footer {
+  font-size: 0.9rem;
+  color: #666;
+  padding: 50px 0;
+  text-align: center;
+}
+
+
+
+/* For medium to large */
+@media all and (min-width: 520px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+  }
+
+  .main {
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.6) 2px 10px 10px -12px;
+  }
+}
+
+@media all and (min-width: 800px) {
+  body {
+    padding-left: 290px;
+    padding-right: 20px;
+  }
+
+  .extras {
+    left: 0;
+  }
 }
