@@ -18,8 +18,8 @@ function newTask(task) {
  */
 function setDone(task, done) {
   tasks = tasks.map(
-    t => t.id===task ? {id:t.id, text:t.text, done:done, exist:t.exist} : t;
-  });
+    t => t.id===task ? {id:t.id, text:t.text, done:done, exist:t.exist} : t
+  );
 }
 
 /**
@@ -28,8 +28,8 @@ function setDone(task, done) {
  */
 function deleteTask(task) {
   tasks = tasks.map(
-    t =>t.id===task ? {id:t.id, text:t.text, done:t.done, exist:false} : t;
-  });
+    t => t.id===task ? {id:t.id, text:t.text, done:t.done, exist:false} : t
+  );
 }
 
 /**
@@ -43,8 +43,8 @@ function render() {
 
   // Insertamos todos los elementos
   tasks.filter(
-    item => item.exist;
-  }).forEach(function(item) {
+    item => item.exist
+  ).forEach(function(item) {
     var liNode      = document.createElement('li');
     var checkboxNode= document.createElement('input');
     var spanNode    = document.createElement('span');
